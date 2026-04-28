@@ -3,16 +3,17 @@
   <component name="CompilerConfiguration">
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
-      <profile name="Annotation profile for ms-remboursement" enabled="true">
+      <profile name="Annotation profile for ms-patient-mysql" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
         </processorPath>
+        <module name="ms-patient-mysql" />
+        <module name="ms-ordonnance" />
         <module name="ms-remboursement" />
         <module name="ms-patient" />
-        <module name="ms-ordonnance" />
       </profile>
     </annotationProcessing>
   </component>
@@ -20,6 +21,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ms-ordonnance" options="-parameters" />
       <module name="ms-patient" options="-parameters" />
+      <module name="ms-patient-mysql" options="-parameters" />
       <module name="ms-remboursement" options="-parameters" />
     </option>
   </component>

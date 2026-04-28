@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(name = "ms-remboursement", url="localhost:8083")
+@FeignClient(name = "ms-remboursement", url="http://ms-remboursement:8083")
 public interface RemboursementProxy {
     @GetMapping("/remboursements/{idr}")
     public RemboursementDTO getReboursement(@PathVariable("idr") Long idr,
